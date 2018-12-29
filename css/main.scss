@@ -171,6 +171,17 @@ img {
     height: auto;
 }
 
+nav {
+    
+        a + a {
+        margin: 20px;
+    }
+
+        a:last-of-type {
+            margin-right: 0px;
+        }
+}
+
 section {
     background-color: $primary-backgroundcolor;
     color: $primary-color;
@@ -184,6 +195,10 @@ section {
         padding: 20px;
         margin-left: -20px;
         border-left: solid $primary-color 1px;
+
+        @include mq($mq-medium) {
+            border-left: none;
+        }
     }
 
 }

@@ -114,6 +114,11 @@ img {
   width: 200px;
   height: auto; }
 
+nav a + a {
+  margin: 20px; }
+nav a:last-of-type {
+  margin-right: 0px; }
+
 section {
   background-color: black;
   color: white;
@@ -125,6 +130,9 @@ section {
     padding: 20px;
     margin-left: -20px;
     border-left: solid white 1px; }
+    @media (max-width: 600px) {
+      section p {
+        border-left: none; } }
 
 /* ==========================================================================
    Helper classes
