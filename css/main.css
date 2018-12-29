@@ -122,7 +122,7 @@ textarea {
 /* Body Styles */
 body {
     color: #fff;
-    background-color: yellow;
+    background-color: #000;
     transition: background-color 500ms ease;
     font-family: 'Roboto', sans-serif;
 }
