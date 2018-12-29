@@ -182,6 +182,14 @@ nav {
         }
 }
 
+nav * {
+    margin: 20px;
+}
+
+nav *:first-of-type {
+    margin-left: 0px;
+}
+
 section {
     background-color: $primary-backgroundcolor;
     color: $primary-color;

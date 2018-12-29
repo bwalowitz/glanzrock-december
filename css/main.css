@@ -119,6 +119,12 @@ nav a + a {
 nav a:last-of-type {
   margin-right: 0px; }
 
+nav * {
+  margin: 20px; }
+
+nav *:first-of-type {
+  margin-left: 0px; }
+
 section {
   background-color: black;
   color: white;
