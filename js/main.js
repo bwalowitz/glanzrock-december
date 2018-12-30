@@ -10,30 +10,30 @@ $(document).ready(function() {
     });
 });
 
-// transition page loader
+// // transition page loader
 
-$("nav a").on("click", function (event) {
+// $("nav a").on("click", function(event) {
   
-    event.preventDefault()
+//     event.preventDefault()
     
-    const href = $(this).attr("href")
+//     const href = $(this).attr("href")
     
-    window.history.pushState(null, null, href)
+//     window.history.pushState(null, null, href)
     
-    $("nav a").removeClass("active")
-    $(this).addClass("active")
+//     $("nav a").removeClass("active")
+//     $(this).addClass("active")
     
-    $.ajax({
-      url: href,
-      success: function (data) {
-        $("div").fadeOut(250, function () {
-          const newPage = $(data).filter("div").html()
+//     $.ajax({
+//       url: href,
+//       success: function (data) {
+//         $('.wrapper').fadeOut(250, function() {
+//           const newPage = $(data).filter('.wrapper').html()
           
-          $("div").html(newPage)
+//           $('.wrapper').html(newPage)
           
-          $("div").fadeIn(250)
-        })
-      }
-    })
+//           $('.wrapper').fadeIn(250)
+//         })
+//       }
+//     })
     
-  })
+//   })

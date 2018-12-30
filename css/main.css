@@ -656,7 +656,9 @@ footer > p {
 
 }
 
-
+.current {
+    color: yellow;
+}
 .flex-center {
     width: 100%;
     height: calc(80vh - 1.5em);
