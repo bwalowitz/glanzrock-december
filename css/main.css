@@ -130,6 +130,7 @@ body {
 
 p {
     letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -213,11 +214,61 @@ span.bottomline {
     margin-right: 1em;
     line-height: 1.6;
     margin-top: -5px;
+    font-size: 1.3em;
+    font-weight: 200;
 }
 
 .hero-p {
     margin-bottom: 4em;
 }
+
+.hero-p p {
+    font-weight: 200;
+}
+
+.flex .hero-p {
+    margin: 0;
+}
+
+.flex .hero-p p {
+    font-weight: 200;
+    font-size: .8em;
+}
+
+.flex .hero-p h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+}
+
+.hero-p-two,
+.hero-p-three {
+    padding: 1.5em;
+}
+
+.hero-p-two {
+    border-right: solid white 1px;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+}
+
+.hero-p-three {
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+}
+
+.hero-p-three h2,
+.hero-p-three p {
+    margin: 0 0 .3em 0;
+}
+
+.hero-p-two h2,
+.hero-p-two p {
+    margin: 0 0 .3em 0;
+}
+
+
+
 
 .article > * {
     margin: 0;
@@ -228,17 +279,32 @@ span.bottomline {
     align-items: flex-end;
     margin: 0 0 0 auto;
     justify-content: flex-start;
-    border: solid white 1px;
     align-items: center;
 }
 
 .flex nav a {
+    border-bottom: 1px white solid;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
     display: block;
     width: 100%;
-    padding: 5px;
+    padding: 8px 12px;
     text-align: center;
     margin-top: 0;
-    border-bottom: 1px white solid;
+    
+    font-weight: 300;
+    transition: background-color 400ms ease;
+    
+    font-size: .8em;
+}
+
+.flex nav a:first-of-type {
+    border-top: 1px white solid;
+}
+
+.flex nav a:hover {
+    background-color: white;
+    color: black;
 
 }
 
