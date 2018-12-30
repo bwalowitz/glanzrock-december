@@ -125,6 +125,11 @@ body {
     background-color: #000;
     transition: background-color 500ms ease;
     font-family: 'Roboto', sans-serif;
+    font-size: calc(1vw + 0.6em);
+}
+
+p {
+    letter-spacing: 1px;
 }
 
 a {
@@ -134,12 +139,12 @@ a {
     letter-spacing: 1px;
 }
 
-nav a{
+header nav a{
     margin-right: 10px;
     margin-left: 10px;
 }
 
-nav a:last-of-type {
+header nav a:last-of-type {
     margin-right: 0px;
 }
 
@@ -147,7 +152,7 @@ header {
     display: flex;
 }
 
-nav {
+header nav {
     align-self: flex-end;
     margin-left: auto;
 }
@@ -164,12 +169,16 @@ header img {
     /* background-color: yellow; */
 }
 
+.hero-p-one {
+    margin: 100px 0 0 0;
+}
+
 .hero-p h1 {
-    display: inline-block;
-    font-size: 12vw;
+    line-height: .3;
+    font-size: 12.5vw;
     text-transform: uppercase;
-    line-height: .5;
-    margin-bottom: 0;
+    margin-bottom: .2rem;
+    margin-top: calc(1vw * 3);
 }
 /* 
 span.topline {
@@ -184,15 +193,53 @@ span.topline {
 }
 
 span.bottomline {
+    display: inline;
     line-height: 0;
     font-size: .6em;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: calc(0.6vw * 3.6);
+    font-weight: 200;
+    margin: 0;
+    margin-left: -2px;
+    padding: 0;
+    letter-spacing: calc(0.6vw * 4);
+}
+
+
+.lastletter {letter-spacing:0;}
+
+
+.hero-p-one p {
+    margin: 0;
+    max-width: calc(60vw - 1em);
+    margin-right: 1em;
+    line-height: 1.6;
+    margin-top: -5px;
+}
+
+.hero-p {
+    margin-bottom: 4em;
 }
 
 .article > * {
     margin: 0;
+}
+
+.flex nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 0 auto;
+    justify-content: flex-start;
+    border: solid white 1px;
+    align-items: center;
+}
+
+.flex nav a {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px white solid;
+
 }
 
 .article > .article-date {
@@ -313,6 +360,20 @@ span.bottomline {
 
 .clearfix:after {
     clear: both;
+}
+
+.flex {
+    display: flex;
+    /* align-items: space-between; */
+    margin-top: 2.8em;
+
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
 }
 
 /* ==========================================================================
