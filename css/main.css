@@ -267,9 +267,6 @@ span.bottomline {
     margin: 0 0 .3em 0;
 }
 
-
-
-
 .article > * {
     margin: 0;
 }
@@ -345,6 +342,198 @@ span.bottomline {
     margin-right: calc(50% - 50vw);
 }
 
+/* Projects */
+
+.projects {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    /* background-color: yellow; */
+    /* padding-bottom: 100px; */
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 1.5;
+    /* border: solid 1px rgba(255,255,255,1); */
+
+margin-left: auto;
+margin-right: auto;
+}
+
+.projects h2 {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div .project-center {
+    padding: 0 30px 0 30px;
+    /* margin: 0 100px; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: space-between; */
+    margin: 0;
+}
+
+a.project {  
+    height: 200px;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: .5em;
+    margin-right: .5em;
+    text-decoration: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    transition: opacity 400ms ease-in;
+
+    color: black;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 300;
+    text-align: center;
+    /* text-shadow: 1px 1px 20px rgba(0, 0, 0, 1); */
+}
+
+.project .hidden-text {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.6);
+    transition: opacity 400ms ease;
+}
+
+
+a.project:hover {
+    opacity: 1;
+}
+
+.project .hidden-text:hover {
+    opacity: 1;
+}
+
+
+.hidden-text {
+    /* margin-bottom: 5px; */
+    opacity: 1;
+    
+
+}
+
+
+
+/*   
+.project .hidden-text {
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.6);
+    transition: opacity 400ms ease;
+} */
+/* 
+.project .hidden-text p {
+    opacity: 1;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.6);
+    transition: opacity 400ms ease;
+} */
+
+/* 
+a.project:hover,
+a.project:active {
+    opacity: 1;
+}
+
+.project .hidden-text:hover,
+.project .hidden-text:active {
+    opacity: 1;
+} */
+
+.project-one {
+    background-image: linear-gradient(
+        /* 90% 90% ellipse at bottom, 
+        rgba(255,255,255,.9) 0%, 
+        rgba(255,255,255,.7) 50%,
+        rgba(255,255,255,0) 80%
+      ), */
+      /* linear-gradient( */
+        175deg, 
+        RGBA(255,255,255, 0)0%, RGBA(255,255,255, 0)30%, RGBA(255,255,255, .6) 80%, RGBA(255,255,255, .8) 90%
+      ), 
+    /* radial-gradient(circle farthest-side, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%  ), */
+    /* radial-gradient( rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,.9) 95%  ), */
+    url("../img/TentCity-Poster.png");
+}
+
+.project-two {
+    background-image: linear-gradient(
+        175deg, 
+        RGBA(255,255,255, 0)30%, RGBA(255,255,255, .2)70%, RGBA(255,255,255, .4) 80%, RGBA(255,255,255, 1) 100%
+      /* ), 
+        175deg, 
+        RGBA(255, 0, 0, .3)0%, RGBA(255, 0, 0, .3)30%, RGBA(242, 109, 0, .4) 70%, RGBA(242, 109, 0, 1) 100%
+        RGBA(255, 217, 0, 0)40%,RGBA(255, 217, 0, .2)70%,RGBA(255, 217, 0, .4) 80%, RGBA(255, 217, 0, .6) 90%, RGBA(255, 217, 0, 1) 100%
+      */ ), 
+      url("../img/dark-as-night-book-cover.jpg"); 
+}
+.project-three {
+    background-image: linear-gradient(
+        175deg, 
+        RGBA(255,255,255, 0)40%, RGBA(255,255,255, .6)60%, RGBA(255,255,255, .8) 80%, RGBA(255,255,255, .9) 100%
+        /* RGBA(255, 0, 0, .3)0%, RGBA(255, 0, 0, .3)30%, RGBA(242, 109, 0, .4) 70%, RGBA(242, 109, 0, 1) 100% */
+        /* RGBA(255, 217, 0, 0)40%,RGBA(255, 217, 0, .6)70%,RGBA(255, 217, 0, .8) 80%, RGBA(255, 217, 0, 1) 90%, RGBA(255, 217, 0, 1) 100% */
+      ),url("../img/comic-process-3.jpeg");
+}
+
+.project-four {
+    background-image: linear-gradient(
+        175deg, 
+        RGBA(255,255,255, 0)40%, RGBA(255,255,255, .6)60%, RGBA(255,255,255, .8) 80%, RGBA(255,255,255, .9) 100%
+
+        /* RGBA(255, 0, 0, .3)0%, RGBA(255, 0, 0, .3)30%, RGBA(242, 109, 0, .4) 70%, RGBA(242, 109, 0, 1) 100% */
+        /* RGBA(255, 217, 0, 0)40%,RGBA(255, 217, 0, .6)70%,RGBA(255, 217, 0, .8) 80%, RGBA(255, 217, 0, 1) 90%, RGBA(255, 217, 0, 1) 100% */
+      ),url("../img/comic-process-2.jpeg");
+}
+
+.about h2 {
+  
+    font-size: 28px;
+  
+}
+
+/* Footer */
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: .6em;
+    text-align: right;
+    max-width: 92vw;
+    font-weight: 200;
+    margin: 0;
+}
+
+footer > p {
+    margin: 0;
+}
 
 
 
