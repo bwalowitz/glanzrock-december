@@ -127,6 +127,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav a:last-of-type {
+    margin-right: 0px;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
 header img {
     width: 200px;
     height: auto;
